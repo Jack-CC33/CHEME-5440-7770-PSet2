@@ -3,10 +3,14 @@ transcription_saturation_constant=0.036                # units: µM
 characteristic_transcript_length=1000                  # units: nt 
 energy_promoter_state_1=20.0                           # units: kJ/mol
 energy_promoter_state_2=-28.8                          # units: kJ/mol
-inducer_dissociation_constant="need_to_fill_me_in"      # units: muM
-inducer_cooperativity_parameter="need_to_fill_me_in"    # units: dimensionless
-mRNA_half_life_in_min = "need_to_fill_me_in"            # units: min
-RNAPII_concentration="need_to_fill_me_in"               # units: µM
-transcription_elongation_rate="need_to_fill_me_in"      # units: nt/s
-transcription_time_constant="need_to_fill_me_in"        # units: dimensionless
-gene_length_in_nt="need_to_fill_me_in"                  # units: nt
+inducer_dissociation_constant=24.19                     # units: muM            [1]
+inducer_cooperativity_parameter=1.12                    # units: dimensionless  [1]
+mRNA_half_life_in_min = 13.5                            # units: min            [1]
+RNAPII_concentration=0.07                               # units: µM             [1]
+transcription_elongation_rate=21                        # units: nt/s           [1]
+transcription_time_constant=0.61                        # units: dimensionless  [1]
+gene_length_in_nt=690                                   # units: nt             [2]
+
+#sources:
+# [1] Adhikari et al (2020) Front. Bioeng. Biotechnol.
+# [2] CHEME 5440/7770 Problem Set 2 problem statement
