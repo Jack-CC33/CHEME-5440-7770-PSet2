@@ -1,5 +1,14 @@
-# CHEME-5440-7770-PS2-S21
-This repository holds the code for Problem Set 2. You can download this repository as either a ``zip`` file (click the green code button on the upper right) or use the ``clone`` command from the command line:
+# CHEME-5440-7770-PSet2
+This repository holds my code for Problem Set 2. The goal of this project was to model the steady-state mRNA of a given gene in a cell-free system subject to different concentrations of an inducer.  The code was completed based on a framework from https://github.com/varnerlab/CHEME-5440-7770-PS2-S21 courtesy of the Varner Lab at Cornell University.
 
-    $ git clone https://github.com/varnerlab/CHEME-5440-7770-PS2-S21.git
-
+Repository Hierarchy:
+    Configuration:
+        Parameters.toml
+    Source:
+        Balances.jl
+        Control.jl
+        Kinetics.jl
+        Problem.jl
+        Solver.jl
+    execute_me_PS2.jl
+    include.jl
