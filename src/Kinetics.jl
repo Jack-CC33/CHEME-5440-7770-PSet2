@@ -14,7 +14,7 @@ function calculate_transcription_kinetics(t::Float64, x::Array{Float64,1}, probl
     Vmax_X = problem["maximum_transcription_velocity"]
 
     # TODO: compute the transcription rate -
-    # transcription_rate = ...
+    transcription_rate = Vmax_X * G / (tau_X*KX + (tau_X + 1)*G)
 
     # return -
     return transcription_rate
