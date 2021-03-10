@@ -9,12 +9,12 @@ function calculate_transcription_kinetics(t::Float64, x::Array{Float64,1}, probl
     σ70 = x[3]
 
     # get parameters from problem dictionary -
-    KX = problem["transcription_saturation_constant"]
-    tau_X = problem["transcription_time_constant"]
-    Vmax_X = problem["maximum_transcription_velocity"]
+    KX = problem["transcription_saturation_constant"]   #nM
+    tau_X = problem["transcription_time_constant"]      #dimensionless
+    Vmax_X = problem["maximum_transcription_velocity"]  #nM/min
 
     # TODO: compute the transcription rate -
-    transcription_rate = Vmax_X * G / (tau_X*KX + (tau_X + 1)*G)
+    transcription_rate = Vmax_X * G / (tau_X*KX + (tau_X + 1)*G)    #nM/min
 
     # return -
     return transcription_rate
