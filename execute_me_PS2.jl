@@ -57,3 +57,6 @@ mRNA_steady_state_array = main(path_to_parameters_file, inducer_array)
 plot(mRNA_steady_state_array[:,1],mRNA_steady_state_array[:,2], xscale=:log10, legend=false)
 xlabel!("Inducer concentration (nM)")
 ylabel!("Steady state mRNA concentration (nM)")
+
+path_to_plot = joinpath(_PATH_TO_OUTPUT,"PS2_Plot.png")
+savefig(path_to_plot)
